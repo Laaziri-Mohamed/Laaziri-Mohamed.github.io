@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code & Simulations — Dr. [Your Name]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fira+Code:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;1,7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Dr. [Your Name]</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="publications.html">Publications</a>
+        <a href="research.html">Research</a>
+        <a href="simulations.html">Simulations</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+  <h1 class="page-title fade-in">Code & Simulations</h1>
+  <p class="page-subtitle fade-in">Open-source tools, numerical experiments, and visualizations</p>
+
+  <!-- Simulation 1: with video -->
+  <div class="sim-card fade-in">
+    <div class="sim-video">
+      <!-- OPTION A: Local video file -->
+      <!-- <video controls poster="img/wave-thumb.jpg"><source src="videos/wave-simulation.mp4" type="video/mp4"></video> -->
+
+      <!-- OPTION B: YouTube embed — replace VIDEO_ID -->
+      <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen loading="lazy"></iframe> -->
+
+      <div class="placeholder">
+        Video placeholder<br>
+        Replace with &lt;video&gt; or YouTube &lt;iframe&gt;<br>
+        See comments in source code
+      </div>
+    </div>
+    <div class="sim-body">
+      <h3>WaveEvolver — Nonlinear wave propagation</h3>
+      <p>GPU-accelerated solver for nonlinear wave equations on curved backgrounds. The video above shows soliton scattering in a Schwarzschild geometry, computed using pseudo-spectral methods with adaptive time-stepping.</p>
+      <div class="sim-meta">
+        <span>Python &middot; JAX</span>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <span>MIT License</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simulation 2: with video -->
+  <div class="sim-card fade-in">
+    <div class="sim-video">
+      <!-- Replace with your video or iframe -->
+      <div class="placeholder">
+        Video placeholder<br>
+        Quantum graph eigenfunction animation
+      </div>
+    </div>
+    <div class="sim-body">
+      <h3>QuantumGraph — Spectral visualization</h3>
+      <p>Interactive visualization of eigenfunctions on quantum graphs. Computes spectral data via finite-element methods and renders real-time animations of wavefunction dynamics on combinatorial and metric graph structures.</p>
+      <div class="sim-meta">
+        <span>JavaScript &middot; D3.js &middot; WebGL</span>
+        <a href="#">GitHub</a>
+        <a href="#">Live demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simulation 3: code-only -->
+  <div class="sim-card fade-in">
+    <div class="sim-video">
+      <div class="placeholder">
+        Video placeholder<br>
+        Topological phase diagram
+      </div>
+    </div>
+    <div class="sim-body">
+      <h3>TopoClassify — Topological invariant computation</h3>
+      <p>Numerical computation of Chern numbers, winding numbers, and Z₂ invariants for tight-binding Hamiltonians on arbitrary lattice geometries. Includes routines for generating phase diagrams and tracking gap closings.</p>
+      <div class="sim-meta">
+        <span>Julia</span>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simulation 4 -->
+  <div class="sim-card fade-in">
+    <div class="sim-video">
+      <div class="placeholder">
+        Video placeholder<br>
+        RG flow trajectories
+      </div>
+    </div>
+    <div class="sim-body">
+      <h3>RGFlow — Renormalization group integrator</h3>
+      <p>Numerical integration of renormalization group equations for scalar field theories. Tracks fixed points, computes critical exponents, and visualizes flow trajectories in coupling-constant space across various dimensions.</p>
+      <div class="sim-meta">
+        <span>C++ &middot; Python bindings</span>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fade-in" style="margin-top:2.5rem;padding:1.3rem;border:1px solid var(--border);border-radius:6px;background:var(--bg-card)">
+    <p style="font-size:0.88rem;color:var(--text-s);line-height:1.65">
+      <strong style="color:var(--text)">Note on reproducibility:</strong> All simulation code includes configuration files and random seeds to reproduce the results shown in the corresponding publications. If you encounter any issues, please open an issue on GitHub or email me directly.
+    </p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-links">
+    <a href="mailto:your.email@university.edu">Email</a>
+    <a href="#">Google Scholar</a>
+    <a href="#">ORCID</a>
+    <a href="#">GitHub</a>
+  </div>
+  <p>&copy; 2026 Dr. [Your Name]</p>
+</footer>
+
+</body>
+</html>
