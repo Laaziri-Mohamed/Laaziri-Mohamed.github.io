@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">Multiphysics modelling graphic</title>
+  <desc id="desc">A stylized fractured mesh coupled with mechanics, flow and heat-transfer symbols.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f6ef"/>
+      <stop offset="1" stop-color="#efe9db"/>
+    </linearGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8b3f24"/>
+      <stop offset="1" stop-color="#12465b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="520" rx="36" fill="url(#bg)"/>
+  <g stroke="#12465b" stroke-width="5" fill="none" opacity="0.45">
+    <path d="M70 92 220 58 365 142 515 80 706 140 906 88"/>
+    <path d="M70 92 112 268 50 430M220 58 264 244 112 268M365 142 264 244 462 304 515 80M706 140 462 304 610 454 906 88M462 304 264 244 274 448 610 454M112 268 274 448 50 430"/>
+    <path d="M220 58 462 304M365 142 706 140M610 454 906 88"/>
+  </g>
+  <path d="M116 450C260 356 336 406 478 282S684 130 882 72" stroke="url(#a)" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <circle cx="200" cy="128" r="55" fill="#8b3f24" opacity="0.95"/><text x="200" y="136" text-anchor="middle" font-size="24" fill="#fff">u</text>
+    <circle cx="505" cy="254" r="55" fill="#12465b" opacity="0.95"/><text x="505" y="262" text-anchor="middle" font-size="24" fill="#fff">p</text>
+    <circle cx="770" cy="348" r="55" fill="#8b3f24" opacity="0.95"/><text x="770" y="356" text-anchor="middle" font-size="24" fill="#fff">T</text>
+  </g>
+  <text x="70" y="60" font-family="Georgia, serif" font-size="34" fill="#151515">Thermo-hydro-mechanical models in fractured media</text>
+</svg>

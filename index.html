@@ -1,109 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. [Your Name] — Physics & Mathematics</title>
-<meta name="description" content="Academic website of Dr. [Your Name], researcher in theoretical physics and mathematics.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fira+Code:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;1,7..72,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Laaziri - Applied Mathematics and Scientific Computing</title>
+  <meta name="description" content="Academic website of Mohamed Laaziri, postdoctoral researcher in multiphysics modelling, scientific computing, THM fractured media, VEM, Nitsche methods, and nuclear safety.">
+  <meta name="author" content="Mohamed Laaziri">
+  <meta property="og:title" content="Mohamed Laaziri - Applied Mathematics and Scientific Computing">
+  <meta property="og:description" content="Academic website of Mohamed Laaziri, postdoctoral researcher in multiphysics modelling, scientific computing, THM fractured media, VEM, Nitsche methods, and nuclear safety.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://laaziri-mohamed.github.io/">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-name">Dr. [Your Name]</a>
-    <div class="nav-right">
-      <div class="nav-links">
-        <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="research.html">Research</a>
-        <a href="simulations.html">Simulations</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Mohamed Laaziri homepage">
+        <span class="brand-mark">ML</span>
+        <span><span class="brand-name">Mohamed Laaziri</span><span class="brand-title">Applied Mathematics · Scientific Computing</span></span>
+      </a>
+      <div class="nav-actions">
+        <div class="nav-links"><a href="index.html">About</a>
+<a href="publications.html">Publications</a>
+<a href="research.html">Research</a>
+<a href="simulations.html">Software</a>
+<a href="teaching.html">Experience</a>
+<a href="blog.html">Notes</a>
+<a href="contact.html">Contact</a></div>
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="4"/></svg></button>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       </div>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-      </button>
-      <button class="hamburger" aria-label="Menu">
-        <svg viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
-      </button>
-    </div>
-  </div>
-</nav>
+    </nav>
+  </header>
+  <main id="main">
 
-<main class="page">
-  <div class="hero-layout fade-in">
-    <div class="hero-photo">
-      <!-- Replace with: <img src="img/photo.jpg" alt="Dr. [Your Name]"> -->
-      Your photo<br>(replace in<br>img/photo.jpg)
-    </div>
-    <div class="hero-text">
-      <h1>Dr. [Your Name]</h1>
-      <p class="subtitle">Theoretical Physicist & Mathematician</p>
-      <p class="bio">
-        I am a researcher at <a href="#">[Your Institution]</a>, working at the intersection of mathematical physics and [your specialty]. My work focuses on [brief description — e.g., nonlinear PDEs, spectral geometry, quantum field theory].
-      </p>
-      <p class="bio">
-        I completed my PhD at [University] under the supervision of [Advisor], where I studied [thesis topic]. Before that, I obtained my Master's degree from [University].
-      </p>
-      <div class="affiliations">
-        <span>[Your Lab]</span>
-        <span>[University]</span>
-        <span>[Research Network]</span>
+    <section class="hero">
+      <div class="fade-in">
+        <div class="kicker">Postdoctoral Researcher · CEA IRESNE</div>
+        <h1>Mohamed Laaziri</h1>
+        <p class="lead">Applied mathematician working on multiphysics modelling, numerical analysis, and scientific computing for thermo-hydro-mechanical systems in fractured media and nuclear-safety applications.</p>
+        <p class="hero-summary">I develop and analyze numerical methods for coupled mechanics, flow, and heat transfer: finite elements, finite volumes, Virtual Element Methods, Nitsche formulations, mixed schemes, and frictional contact models. My current postdoctoral work focuses on multiphysics code coupling for corium-concrete interaction and severe-accident modelling.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="research.html">Research program <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn" href="publications.html">Selected publications</a>
+          <a class="btn ghost" href="files/Mohamed_Laaziri_CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg> CV</a>
+        </div>
+        <div class="stat-grid">
+          <div class="stat"><strong>7</strong><span>HAL-listed research documents</span></div>
+          <div class="stat"><strong>3</strong><span>journal articles</span></div>
+          <div class="stat"><strong>2025</strong><span>PhD in Applied Mathematics</span></div>
+          <div class="stat"><strong>Fortran</strong><span>VEM fracture-contact solver</span></div>
+        </div>
+      </div>
+      <aside class="hero-card fade-in" aria-label="Profile summary">
+        <img class="profile-art" src="img/profile-placeholder.svg" alt="Geometric placeholder profile illustration for Mohamed Laaziri">
+        <ul class="fact-list">
+          <li><span>Current role</span><span>Postdoctoral Researcher</span></li>
+          <li><span>Institution</span><span>CEA IRESNE, Cadarache</span></li>
+          <li><span>Location</span><span>Aix-en-Provence, France</span></li>
+          <li><span>Core methods</span><span>FEM · FVM · VEM · Nitsche</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section fade-in">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Research focus</div>
+          <h2>Numerical methods for coupled physics</h2>
+        </div>
+        <p>My work sits at the interface of applied mathematics, computational mechanics, geosciences, and nuclear safety. I focus on schemes that are robust on complex fractured geometries and consistent with the energy structure of the physical model.</p>
+      </div>
+      <div class="grid three">
+        <article class="card">
+          <div class="meta">THM modelling</div>
+          <h3>Fractured porous media</h3>
+          <p>Mixed-dimensional models for thermo-hydro-mechanical processes with matrix-fracture coupling, poroelasticity, Darcy flow, and heat transfer.</p>
+        </article>
+        <article class="card">
+          <div class="meta">Contact mechanics</div>
+          <h3>Nitsche and mixed formulations</h3>
+          <p>Weak enforcement of contact constraints and Coulomb friction at fracture interfaces, including VEM and Lagrange-multiplier strategies.</p>
+        </article>
+        <article class="card">
+          <div class="meta">Nuclear safety</div>
+          <h3>Corium-concrete interaction</h3>
+          <p>Multiphysics coupling between thermal-hydraulics and thermomechanics to improve predictions of concrete ablation, cracking, and degassing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Current position</div>
+          <h2>CEA IRESNE, Cadarache</h2>
+        </div>
+        <p>Postdoctoral work on code coupling for severe-accident simulations, with numerical exchanges between CIMAC and CAST3M in the ANR IMMOC project.</p>
+      </div>
+      <div class="grid two">
+        <article class="card">
+          <h3>CIMAC - CAST3M coupling</h3>
+          <p>Development of numerical exchanges for heat fluxes, geometry evolution, ablated concrete source terms, and degassing terms between a multiphase thermal-hydraulics code and a finite-element thermomechanics code.</p>
+          <div class="pill-row"><span class="pill">CIMAC</span><span class="pill">CAST3M</span><span class="pill">corium-concrete</span><span class="pill">thermomechanics</span></div>
+        </article>
+        <article class="card">
+          <h3>Research engineering stack</h3>
+          <p>Scientific programming and simulation work in Fortran, C++, Python, MATLAB, CAST3M, FreeFEM++, ABAQUS, COMSOL, Linux, and high-performance numerical libraries.</p>
+          <div class="pill-row"><span class="pill">Fortran</span><span class="pill">C++</span><span class="pill">Python</span><span class="pill">MATLAB</span><span class="pill">Linux</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section fade-in">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Navigate</div>
+          <h2>Explore the site</h2>
+        </div>
+      </div>
+      <div class="grid three">
+        <a class="card" href="publications.html"><h3>Publications</h3><p>Journal articles, conference proceedings, thesis, and links to DOI/HAL records.</p></a>
+        <a class="card" href="research.html"><h3>Research</h3><p>Research themes, modelling approach, and current scientific questions.</p></a>
+        <a class="card" href="simulations.html"><h3>Software</h3><p>Research code, numerical prototypes, reproducibility notes, and technical stack.</p></a>
+        <a class="card" href="teaching.html"><h3>Experience</h3><p>Professional timeline, education, conferences, languages, and competencies.</p></a>
+        <a class="card" href="blog.html"><h3>Notes</h3><p>Technical note topics for VEM, Nitsche methods, THM modelling, and code coupling.</p></a>
+        <a class="card" href="contact.html"><h3>Contact</h3><p>Email, LinkedIn, GitHub, HAL profile, and downloadable CV.</p></a>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Mohamed Laaziri. Built with static HTML, CSS, and JavaScript.</p>
+      <div class="footer-links">
+        <a href="mailto:newmohamedlaaziri@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/">LinkedIn</a>
+        <a href="https://github.com/Laaziri-Mohamed">GitHub</a>
+        <a href="https://cv.hal.science/mohamed-laaziri">HAL</a>
       </div>
     </div>
-  </div>
-
-  <!-- Quick navigation -->
-  <div class="home-links fade-in">
-    <a href="publications.html" class="home-link">
-      <div class="hl-title">Publications</div>
-      <div class="hl-desc">Journal articles, preprints, and conference proceedings.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-    <a href="research.html" class="home-link">
-      <div class="hl-title">Research</div>
-      <div class="hl-desc">Current and past projects in mathematical physics.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-    <a href="simulations.html" class="home-link">
-      <div class="hl-title">Code & Simulations</div>
-      <div class="hl-desc">Open-source tools, numerical experiments, and videos.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-    <a href="teaching.html" class="home-link">
-      <div class="hl-title">Teaching</div>
-      <div class="hl-desc">Courses, lecture notes, and educational materials.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-    <a href="blog.html" class="home-link">
-      <div class="hl-title">Blog & Notes</div>
-      <div class="hl-desc">Expository writing on physics and mathematics.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-    <a href="contact.html" class="home-link">
-      <div class="hl-title">Contact & CV</div>
-      <div class="hl-desc">Get in touch or download my curriculum vitae.</div>
-      <span class="hl-arrow">&rarr;</span>
-    </a>
-  </div>
-</main>
-
-<footer>
-  <div class="footer-links">
-    <a href="mailto:your.email@university.edu">Email</a>
-    <a href="#">Google Scholar</a>
-    <a href="#">ORCID</a>
-    <a href="#">GitHub</a>
-  </div>
-  <p>&copy; 2026 Dr. [Your Name]</p>
-</footer>
-
+  </footer>
 </body>
 </html>

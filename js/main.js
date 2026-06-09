@@ -1,49 +1,81 @@
-// ===== DARK MODE =====
-(function(){
-  const saved = localStorage.getItem('theme');
-  if(saved) document.documentElement.setAttribute('data-theme', saved);
-  else if(window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.setAttribute('data-theme','dark');
-})();
+(function () {
+  const storageKey = "ml-site-theme";
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Theme toggle
-  const toggle = document.querySelector('.theme-toggle');
-  if(toggle){
-    toggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
+  function setTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem(storageKey, theme);
   }
 
-  // Mobile nav
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  if(hamburger && navLinks){
-    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => navLinks.classList.remove('open'));
-    });
+  function initTheme() {
+    const saved = localStorage.getItem(storageKey);
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setTheme(saved || (prefersDark ? "dark" : "light"));
   }
 
-  // Active nav link
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    const href = a.getAttribute('href');
-    if(href === currentPage || (currentPage === '' && href === 'index.html')){
-      a.classList.add('active');
-    }
-  });
-
-  // Fade-in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if(e.isIntersecting){
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
+  function initNav() {
+    const current = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      const href = link.getAttribute("href");
+      if (href === current || (current === "" && href === "index.html")) {
+        link.classList.add("active");
       }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-});
+
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+    }
+  }
+
+  function initThemeToggle() {
+    const btn = document.querySelector(".theme-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") || "light";
+      setTheme(current === "dark" ? "light" : "dark");
+    });
+  }
+
+  function initFadeIn() {
+    const els = document.querySelectorAll(".fade-in");
+    if (!els.length) return;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach((el) => observer.observe(el));
+  }
+
+  function initPublicationFilters() {
+    const buttons = document.querySelectorAll("[data-filter]");
+    const pubs = document.querySelectorAll(".pub-item[data-type]");
+    if (!buttons.length || !pubs.length) return;
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        const filter = button.dataset.filter;
+        pubs.forEach((pub) => {
+          pub.style.display = filter === "all" || pub.dataset.type === filter ? "block" : "none";
+        });
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initTheme();
+    initNav();
+    initThemeToggle();
+    initFadeIn();
+    initPublicationFilters();
+  });
+})();
