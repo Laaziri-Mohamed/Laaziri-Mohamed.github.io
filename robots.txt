@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://laaziri-mohamed.github.io/sitemap.xml
