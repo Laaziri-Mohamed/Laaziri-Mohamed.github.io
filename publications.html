@@ -1,139 +1,459 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications - Mohamed Laaziri</title>
-  <meta name="description" content="Selected publications of Mohamed Laaziri in numerical methods, THM modelling, fractured porous media, contact mechanics, and VEM-Nitsche discretizations.">
-  <meta name="author" content="Mohamed Laaziri">
-  <meta property="og:title" content="Publications - Mohamed Laaziri">
-  <meta property="og:description" content="Selected publications of Mohamed Laaziri in numerical methods, THM modelling, fractured porous media, contact mechanics, and VEM-Nitsche discretizations.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://laaziri-mohamed.github.io/">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Publications | Mohamed Laaziri | Numerical Analysis and Scientific Computing</title>
+<meta content="Publications by Mohamed Laaziri on VEM-Nitsche schemes, Coulomb frictional contact, mixed-dimensional poromechanics, thermodynamically consistent THM discretisations, and fractured porous media." name="description"/>
+<meta content="Mohamed Laaziri" name="author"/>
+<meta content="Publications | Mohamed Laaziri | Numerical Analysis and Scientific Computing" property="og:title"/>
+<meta content="Publications by Mohamed Laaziri on VEM-Nitsche schemes, Coulomb frictional contact, mixed-dimensional poromechanics, thermodynamically consistent THM discretisations, and fractured porous media." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://laaziri-mohamed.github.io/publications.html" property="og:url"/>
+<link href="img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+
+  <meta content="index, follow, max-image-preview:large" name="robots"/>
+  <meta content="Mohamed Laaziri, Laaziri Mohamed, M. Laaziri, Applied Mathematics, Scientific Computing, Computational Multiphysics, Thermo-Hydro-Mechanical Modeling, THM, Virtual Element Method, VEM, Nitsche Method, Fractured Porous Media, Contact Mechanics, Coulomb Friction, Nuclear Safety, CEA IRESNE, CAST3M, CIMAC, Corium Concrete Interaction, Poromechanics, Newton Krylov, Semismooth Newton, Fortran scientific computing" name="keywords"/>
+  <meta content="Mohamed Laaziri | Computational Multiphysics and Numerical Analysis" property="og:site_name"/>
+  <meta content="https://laaziri-mohamed.github.io/img/seo-preview.png" property="og:image"/>
+  <meta content="Mohamed Laaziri - Computational Multiphysics and Numerical Analysis" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Publications | Mohamed Laaziri | Numerical Analysis and Scientific Computing" name="twitter:title"/>
+  <meta content="Publications by Mohamed Laaziri on VEM-Nitsche schemes, Coulomb frictional contact, mixed-dimensional poromechanics, thermodynamically consistent THM discretisations, and fractured porous media." name="twitter:description"/>
+  <meta content="https://laaziri-mohamed.github.io/img/seo-preview.png" name="twitter:image"/>
+  <meta content="#5d7f72" name="theme-color"/>
+  <link href="https://laaziri-mohamed.github.io/publications.html" rel="canonical"/>
+  <script data-seo="true" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri",
+      "name": "Mohamed Laaziri",
+      "alternateName": [
+        "M. Laaziri",
+        "Laaziri Mohamed",
+        "Mohamed LAAZIRI"
+      ],
+      "url": "https://laaziri-mohamed.github.io/",
+      "image": "https://laaziri-mohamed.github.io/img/seo-preview.png",
+      "jobTitle": "Postdoctoral Researcher in Computational Multiphysics and Scientific Computing",
+      "description": "Applied mathematician and scientific-computing researcher working on thermo-hydro-mechanical modeling, fractured porous media, contact mechanics, Virtual Element Methods, Nitsche formulations, nonlinear solvers, and nuclear-safety applications.",
+      "email": "mailto:newmohamedlaaziri@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/",
+        "https://github.com/Laaziri-Mohamed",
+        "https://cv.hal.science/mohamed-laaziri"
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "CEA IRESNE",
+          "url": "https://www.cea.fr/"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Université Côte d’Azur"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Reims Champagne-Ardenne"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "École Normale Supérieure Casablanca"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Hassan II University of Casablanca"
+        }
+      ],
+      "knowsAbout": [
+        "Applied mathematics",
+        "Scientific computing",
+        "Numerical analysis",
+        "Thermo-hydro-mechanical modeling",
+        "THM models",
+        "Virtual Element Method",
+        "VEM",
+        "Nitsche method",
+        "Hybrid Finite Volumes",
+        "Finite Element Method",
+        "Fractured porous media",
+        "Poromechanics",
+        "Contact mechanics",
+        "Coulomb friction",
+        "Newton-Krylov methods",
+        "Semismooth Newton methods",
+        "Corium-concrete interaction",
+        "Nuclear safety",
+        "CAST3M",
+        "CIMAC",
+        "Fortran"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://laaziri-mohamed.github.io/#website",
+      "url": "https://laaziri-mohamed.github.io/",
+      "name": "Mohamed Laaziri | Computational Multiphysics and Numerical Analysis",
+      "description": "Official academic website of Mohamed Laaziri.",
+      "publisher": {
+        "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://laaziri-mohamed.github.io/publications.html#webpage",
+      "url": "https://laaziri-mohamed.github.io/publications.html",
+      "name": "Publications | Mohamed Laaziri | Numerical Analysis and Scientific Computing",
+      "description": "Publications by Mohamed Laaziri on VEM-Nitsche schemes, Coulomb frictional contact, mixed-dimensional poromechanics, thermodynamically consistent THM discretisations, and fractured porous media.",
+      "isPartOf": {
+        "@id": "https://laaziri-mohamed.github.io/#website"
+      },
+      "about": {
+        "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "https://laaziri-mohamed.github.io/publications.html#publications-list",
+      "name": "Selected publications by Mohamed Laaziri",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "Mixed and Nitsche’s discretizations of Coulomb frictional contact-mechanics for mixed-dimensional poromechanical models",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "Mixed and Nitsche’s discretizations of frictional contact-mechanics in fractured porous media",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "Thermodynamically consistent discretisation of a Thermo-Hydro-Mechanical model",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "Discretisations of mixed-dimensional Thermo-Hydro-Mechanical models preserving energy estimates",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "VEM-Nitsche fully discrete polytopal scheme for frictionless contact-mechanics",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "VEM-Nitsche fully discrete polytopal scheme for mixed-dimensional poromechanical models with Coulomb frictional contact at matrix-fracture interfaces",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "name": "VEM fully discrete Nitsche’s discretization of Coulomb frictional contact-mechanics for mixed-dimensional poromechanical models",
+            "author": {
+              "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Mohamed Laaziri homepage">
-        <span class="brand-mark">ML</span>
-        <span><span class="brand-name">Mohamed Laaziri</span><span class="brand-title">Applied Mathematics · Scientific Computing</span></span>
-      </a>
-      <div class="nav-actions">
-        <div class="nav-links"><a href="index.html">About</a>
-<a href="publications.html">Publications</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a aria-label="Mohamed Laaziri homepage" class="brand" href="index.html">
+<span class="brand-mark">ML</span>
+<span><span class="brand-name">Mohamed Laaziri</span><span class="brand-title">Multiphysics · Numerical Analysis · Scientific Computing</span></span>
+</a>
+<div class="nav-actions">
+<div class="nav-links"><a href="index.html">About</a>
 <a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
 <a href="simulations.html">Software</a>
 <a href="teaching.html">Experience</a>
 <a href="blog.html">Notes</a>
 <a href="contact.html">Contact</a></div>
-        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="4"/></svg></button>
-        <button class="icon-btn menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-
-    <section class="page-hero fade-in">
-      <div class="kicker">Publications</div>
-      <h1 class="page-title">Selected publications</h1>
-      <p class="page-subtitle">Journal articles, conference proceedings, thesis work, and open records from HAL. Use the filters to focus on journals, proceedings, or thesis output.</p>
-      <div class="filters" aria-label="Publication filters">
-        <button class="filter-btn active" type="button" data-filter="all">All</button>
-        <button class="filter-btn" type="button" data-filter="journal">Journal</button>
-        <button class="filter-btn" type="button" data-filter="proceedings">Proceedings</button>
-        <button class="filter-btn" type="button" data-filter="thesis">Thesis</button>
-      </div>
-    </section>
-    <div class="pub-year fade-in">2025</div><div class="pub-list">
-
-        <article class="pub-item fade-in" data-type="journal">
-          <div class="title"><span class="pub-badge">Journal</span>VEM fully discrete Nitsche&#x27;s discretization of Coulomb frictional contact-mechanics for mixed-dimensional poromechanical models</div>
-          <div class="authors"><strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">Computational Geosciences, 2025</div>
-          <div class="pub-links"><a href="https://doi.org/10.1007/s10596-025-10392-4">doi</a><a href="https://hal.science/hal-05019674">HAL</a></div>
-        </article>
-
-        <article class="pub-item fade-in" data-type="journal">
-          <div class="title"><span class="pub-badge">Journal</span>VEM-Nitsche fully discrete polytopal scheme for frictionless contact-mechanics</div>
-          <div class="authors"><strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">SIAM Journal on Numerical Analysis, 63(1), 81-102</div>
-          <div class="pub-links"><a href="https://doi.org/10.1137/24M1660218">doi</a><a href="https://hal.science/hal-04571942">HAL</a></div>
-        </article>
-
-        <article class="pub-item fade-in" data-type="thesis">
-          <div class="title"><span class="pub-badge">Thesis</span>Numerical modelling of thermo-hydro-mechanical processes in fractured porous media</div>
-          <div class="authors"><strong>Mohamed Laaziri</strong></div>
-          <div class="venue">PhD thesis, Université Côte d&#x27;Azur, NNT: 2025COAZ5054</div>
-          <div class="pub-links"><a href="https://theses.hal.science/tel-05472966v1">HAL thesis</a></div>
-        </article>
+<button aria-label="Toggle dark mode" class="icon-btn theme-toggle" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path><circle cx="12" cy="12" r="4"></circle></svg></button>
+<button aria-expanded="false" aria-label="Open navigation menu" class="icon-btn menu-btn" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
 </div>
-<div class="pub-year fade-in">2024</div><div class="pub-list">
-
-        <article class="pub-item fade-in" data-type="proceedings">
-          <div class="title"><span class="pub-badge">Proceedings</span>VEM-Nitsche fully discrete polytopal scheme for mixed-dimensional poromechanical models with Coulomb frictional contact at matrix-fracture interfaces</div>
-          <div class="authors"><strong>Mohamed Laaziri</strong>, Roland Masson and A. Haidar</div>
-          <div class="venue">ECMOR 2024 Proceedings, pp. 1-9</div>
-          <div class="pub-links"><a href="https://doi.org/10.3997/2214-4609.202437012">doi</a></div>
-        </article>
-
-        <article class="pub-item fade-in" data-type="journal">
-          <div class="title"><span class="pub-badge">Journal</span>Discretisations of mixed-dimensional Thermo-Hydro-Mechanical models preserving energy estimates</div>
-          <div class="authors">Jérôme Droniou, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">Journal of Computational Physics, 515, 113295</div>
-          <div class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2024.113295">doi</a><a href="https://hal.science/hal-04410001">HAL</a></div>
-        </article>
+</nav>
+</header>
+<main id="main">
+<section class="page-hero fade-in">
+<div class="kicker">Publications</div>
+<h1 class="page-title">Paper-by-paper research map</h1>
+<p class="page-subtitle">Each entry summarises the core numerical work, the physics application, and the computational achievements. Figure slots are included so you can later add meshes, convergence plots, solver curves, or simulation screenshots.</p>
+<div aria-label="Publication filters" class="filters">
+<button class="filter-btn active" data-filter="all" type="button">All</button>
+<button class="filter-btn" data-filter="journal" type="button">Journal</button>
+<button class="filter-btn" data-filter="proceedings" type="button">Proceedings</button>
+<button class="filter-btn" data-filter="thesis" type="button">Thesis</button>
 </div>
-<div class="pub-year fade-in">2023</div><div class="pub-list">
-
-        <article class="pub-item fade-in" data-type="proceedings">
-          <div class="title"><span class="pub-badge">Proceedings</span>Thermodynamically Consistent discretisation of a Thermo-Hydro-Mechanical model</div>
-          <div class="authors">Jérôme Droniou, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">Finite Volumes for Complex Applications X, pp. 265-273</div>
-          <div class="pub-links"><a href="https://doi.org/10.1007/978-3-031-40864-9_21">doi</a><a href="https://hal.science/hal-04105527">HAL</a></div>
-        </article>
-
-        <article class="pub-item fade-in" data-type="proceedings">
-          <div class="title"><span class="pub-badge">Proceedings</span>Mixed and Nitsche&#x27;s discretizations of frictional contact-mechanics in fractured porous media</div>
-          <div class="authors">Laurence Beaude, Franz Chouly, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">LSSC 2023, Lecture Notes in Computer Science, pp. 71-80</div>
-          <div class="pub-links"><a href="https://doi.org/10.1007/978-3-031-56208-2_6">doi</a><a href="https://hal.science/hal-04013887">HAL</a></div>
-        </article>
-
-        <article class="pub-item fade-in" data-type="journal">
-          <div class="title"><span class="pub-badge">Journal</span>Mixed and Nitsche&#x27;s discretizations of Coulomb frictional contact-mechanics for mixed dimensional poromechanical models</div>
-          <div class="authors">Laurence Beaude, Franz Chouly, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
-          <div class="venue">Computer Methods in Applied Mechanics and Engineering, 413, 116124</div>
-          <div class="pub-links"><a href="https://doi.org/10.1016/j.cma.2023.116124">doi</a><a href="https://hal.science/hal-03949272">HAL</a></div>
-        </article>
+</section>
+<section class="section compact fade-in">
+<div class="notice"><strong>Reading guide.</strong> Your papers form a coherent programme: start with mixed/Nitsche contact for poromechanics, move to thermodynamically consistent THM discretisations, then to VEM–Nitsche polytopal schemes and the Coulomb-friction extension with open Fortran research code.</div>
+</section>
+<div class="pub-year fade-in">2025</div><div class="pub-list">
+<article class="pub-item paper-card fade-in" data-type="journal">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Journal</span>VEM fully discrete Nitsche’s discretization of Coulomb frictional contact-mechanics for mixed-dimensional poromechanical models</div>
+<div class="authors"><strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">Computational Geosciences, 29, article 50 (2025)</div>
+<div class="pub-links"><a href="https://doi.org/10.1007/s10596-025-10392-4">doi</a><a href="https://hal.science/hal-05019674">HAL</a><a href="https://github.com/Laaziri-Mohamed/thm-vem-fracture-contact-nitsche-lagrange">code</a></div>
+<p class="paper-summary">Extends the first-order VEM–Nitsche contact framework from frictionless interfaces to Coulomb frictional contact in mixed-dimensional poromechanics, with normal compliance and the no-penetration limit treated in one formulation.</p>
+<div class="algorithm-bar"><span>VEM k=1</span><span>Nitsche contact</span><span>Coulomb friction</span><span>normal compliance</span><span>semismooth/active-set logic</span><span>SuperLU-backed code</span></div>
 </div>
-<div class="pub-year fade-in">2022</div><div class="pub-list">
-
-        <article class="pub-item fade-in" data-type="proceedings">
-          <div class="title"><span class="pub-badge">Proceedings</span>Digital 2D state observers design for the Navier-Stokes equation</div>
-          <div class="authors">Ayoub Farkane, Mohamed Boutayeb, <strong>Mohamed Laaziri</strong> and Mounir Ghogho</div>
-          <div class="venue">CoDIT 2022 - 8th International Conference on Control, Decision and Information Technologies</div>
-          <div class="pub-links"><a href="https://doi.org/10.1109/CoDIT55151.2022.9804019">doi</a><a href="https://hal.science/hal-03741109">HAL</a></div>
-        </article>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>First-order Virtual Element Method on polytopal/polyhedral meshes</li><li>Nitsche weak enforcement of normal and tangential contact conditions</li><li>Coulomb friction with normal compliance/no-penetration limit</li><li>Well-posedness and convergence analysis</li><li>Comparison with mixed VEM plus face-bubble stabilization</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Coulomb-friction extension of the earlier frictionless VEM–Nitsche scheme</li><li>Robustness study with respect to the normal stiffness parameter</li><li>Benchmarking against a mixed VEM formulation with bubble stabilization</li><li>2D/3D test cases including fluid-induced fault reactivation</li><li>Open research code associated with the paper</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Fractured or faulted porous rocks where fluid injection may reactivate faults; examples include geological storage, hydraulic stimulation, and 2D/3D fracture-network poromechanics.</div>
 </div>
-    <section class="section fade-in">
-      <div class="notice"><strong>Publication profile.</strong> My work focuses on discretizations for mixed-dimensional poromechanics, VEM-Nitsche contact mechanics, energy-stable THM schemes, and numerical methods for fractured porous media. A full synchronized publication list is available on my <a href="https://cv.hal.science/mohamed-laaziri">HAL profile</a>.</div>
-    </section>
-
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-      <p>&copy; 2026 Mohamed Laaziri. Built with static HTML, CSS, and JavaScript.</p>
-      <div class="footer-links">
-        <a href="mailto:newmohamedlaaziri@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/">LinkedIn</a>
-        <a href="https://github.com/Laaziri-Mohamed">GitHub</a>
-        <a href="https://cv.hal.science/mohamed-laaziri">HAL</a>
-      </div>
-    </div>
-  </footer>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-vem-coulomb.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a 2D/3D fracture-network result, fault-reactivation plot, or contact-status visualization here.</span></figcaption>
+</figure>
+</div>
+</article>
+<article class="pub-item paper-card fade-in" data-type="journal">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Journal</span>VEM-Nitsche fully discrete polytopal scheme for frictionless contact-mechanics</div>
+<div class="authors"><strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">SIAM Journal on Numerical Analysis, 63(1), 81–102 (2025)</div>
+<div class="pub-links"><a href="https://doi.org/10.1137/24M1660218">doi</a><a href="https://hal.science/hal-04571942">HAL</a></div>
+<p class="paper-summary">Introduces and analyses a fully discrete VEM–Nitsche formulation for small-strain frictionless contact along fracture or fault interfaces represented as co-dimension-one surfaces.</p>
+<div class="algorithm-bar"><span>VEM k=1</span><span>Nitsche method</span><span>semismooth Newton</span><span>error estimates</span><span>polytopal meshes</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>First-order VEM generalizing P1 finite elements to polytopal meshes</li><li>Fully discrete Nitsche formulation for weak contact enforcement</li><li>Small-strain linear elasticity with fracture-interface jumps</li><li>Well-posedness proof and convergence analysis</li><li>Optimal first-order error estimate under minimal regularity</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Provides the rigorous frictionless foundation for later Coulomb-friction work</li><li>Shows optimal first-order error behaviour</li><li>Demonstrates good nonlinear behaviour of the semismooth Newton solver</li><li>Adapts contact mechanics to complex polytopal meshes</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Subsurface contact mechanics in fractured/faulted media, especially models that can later be coupled to Darcy flow for injection-induced fault reactivation or enhanced geothermal stimulation.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-vem-frictionless.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a convergence plot, mesh/contact schematic, or displacement-jump figure here.</span></figcaption>
+</figure>
+</div>
+</article>
+<article class="pub-item paper-card fade-in" data-type="thesis">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Thesis</span>Numerical modelling of thermo-hydro-mechanical processes in fractured porous media</div>
+<div class="authors"><strong>Mohamed Laaziri</strong></div>
+<div class="venue">PhD thesis, Université Côte d’Azur, NNT: 2025COAZ5054</div>
+<div class="pub-links"><a href="https://theses.hal.science/tel-05472966v1">HAL thesis</a></div>
+<p class="paper-summary">Doctoral synthesis of the modelling, discretisation, nonlinear-solver, and numerical-analysis work on THM processes and contact mechanics in fractured porous media.</p>
+<div class="algorithm-bar"><span>THM coupling</span><span>VEM</span><span>HFV</span><span>Nitsche</span><span>Lagrange multipliers</span><span>Newton methods</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Mixed-dimensional THM models</li><li>Finite volume and finite element discretisations</li><li>VEM and Nitsche contact mechanics</li><li>Energy estimates and thermodynamic consistency</li><li>Nonlinear solvers for coupled flow–heat–mechanics systems</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Connects the journal and conference papers into one coherent research programme</li><li>Documents the transition from mixed FE contact formulations to VEM–Nitsche polytopal schemes</li><li>Frames the work for scientific computing and subsurface-risk applications</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Fractured geological media under coupled pressure, temperature, and deformation, with applications to geothermal energy, geological storage, and fault/fracture mechanics.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-research-map.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a thesis overview figure, chapter map, or global workflow diagram here.</span></figcaption>
+</figure>
+</div>
+</article>
+</div><div class="pub-year fade-in">2024</div><div class="pub-list">
+<article class="pub-item paper-card fade-in" data-type="journal">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Journal</span>Discretisations of mixed-dimensional Thermo-Hydro-Mechanical models preserving energy estimates</div>
+<div class="authors">Jérôme Droniou, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">Journal of Computational Physics, 515, 113295 (2024)</div>
+<div class="pub-links"><a href="https://doi.org/10.1016/j.jcp.2024.113295">doi</a><a href="https://arxiv.org/abs/2401.12342">arXiv</a><a href="https://hal.science/hal-04410001">HAL</a></div>
+<p class="paper-summary">Develops space-time discretisations for mixed-dimensional THM models that preserve energy estimates for both energy-conservation and entropy-balance formulations.</p>
+<div class="algorithm-bar"><span>HFV finite volumes</span><span>mixed FEM</span><span>fixed point</span><span>Newton–Krylov</span><span>Newton–Raphson</span><span>semismooth Newton</span><span>SuperLU</span><span>upwinding</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Mixed-dimensional THM model with Coulomb friction at matrix–fracture interfaces</li><li>Finite volume discretisation for non-isothermal flow using coercive fluxes</li><li>Tailored non-conservative convective-term discretisation</li><li>Mixed finite element contact mechanics with face-wise Lagrange multipliers</li><li>Discrete energy estimates for energy and entropy formulations</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Energy estimates preserved at the discrete level</li><li>Fixed-point coupling accelerated by Newton–Krylov</li><li>Newton–Raphson for the thermo-hydraulic subsystem</li><li>Semismooth Newton for contact mechanics</li><li>Robust nonlinear-solver behaviour with respect to mesh refinement</li><li>Clarifies when entropy-based approximations need correction in gas cases</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Deep geothermal stimulation, CO2 geological storage, induced seismicity risk, and fractured porous media with weakly compressible liquid or highly compressible gas.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-thm-energy.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add energy-balance plots, Newton-iteration curves, DFM fracture-network output, or pressure/temperature fields here.</span></figcaption>
+</figure>
+</div>
+</article>
+<article class="pub-item paper-card fade-in" data-type="proceedings">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Proceedings</span>VEM–Nitsche fully discrete polytopal scheme for mixed-dimensional poromechanical models with Coulomb frictional contact at matrix-fracture interfaces</div>
+<div class="authors"><strong>Mohamed Laaziri</strong>, Roland Masson and Ali Haidar</div>
+<div class="venue">ECMOR 2024 Proceedings, Volume 2024, pp. 1–9</div>
+<div class="pub-links"><a href="https://doi.org/10.3997/2214-4609.202437012">doi</a><a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202437012">EarthDoc</a></div>
+<p class="paper-summary">Conference contribution extending the VEM–Nitsche approach toward mixed-dimensional poromechanics with Coulomb frictional contact and Darcy flow on fracture networks.</p>
+<div class="algorithm-bar"><span>HFV</span><span>VEM k=1</span><span>Nitsche contact</span><span>Coulomb friction</span><span>mixed-dimensional model</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Hybrid Finite Volume flow with cell, face and fracture-edge unknowns</li><li>Pressure discontinuity at matrix–fracture interfaces</li><li>First-order VEM for mechanical displacement</li><li>Nitsche contact conditions at matrix–fracture interfaces</li><li>Coulomb friction extension from the frictionless framework</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Introduces a polytopal discretisation adapted to geometrically complex fault/fracture networks</li><li>Builds the bridge from the frictionless SIAM scheme to the full Coulomb-friction journal article</li><li>Presents the combined HFV-flow/VEM-mechanics architecture to the reservoir-simulation community</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Geothermal systems, geological storage, and fractured/faulted porous media where flow and mechanical contact interact.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-ecmor-polytopal.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add an ECMOR slide figure, reservoir-style fracture mesh, or coupled pressure-displacement result here.</span></figcaption>
+</figure>
+</div>
+</article>
+</div><div class="pub-year fade-in">2023</div><div class="pub-list">
+<article class="pub-item paper-card fade-in" data-type="journal">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Journal</span>Mixed and Nitsche’s discretizations of Coulomb frictional contact-mechanics for mixed dimensional poromechanical models</div>
+<div class="authors">Laurence Beaude, Franz Chouly, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">Computer Methods in Applied Mechanics and Engineering, 413, 116124 (2023)</div>
+<div class="pub-links"><a href="https://doi.org/10.1016/j.cma.2023.116124">doi</a><a href="https://hal.science/hal-03949272">HAL</a><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4332502">SSRN</a></div>
+<p class="paper-summary">Compares mixed, stabilized mixed, and Nitsche formulations for Coulomb frictional contact in single-phase Darcy flow through fractured deformable porous media.</p>
+<div class="algorithm-bar"><span>mixed LM</span><span>stabilized mixed</span><span>Nitsche</span><span>HFV Darcy flow</span><span>P1/P2 FEM</span><span>semismooth solvers</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Mixed formulation with face-wise constant Lagrange multipliers for surface tractions</li><li>Stabilized mixed formulation to relax compatibility constraints</li><li>Nitsche formulation for contact mechanics</li><li>P1/P2 conforming finite elements for displacement</li><li>Hybrid finite volume discretisation of mixed-dimensional Darcy flow</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Clarifies theoretical connections between mixed, stabilized, and Nitsche formulations</li><li>Compares accuracy, nonlinear convergence, and parameter sensitivity</li><li>Handles complex fracture networks with corners and intersections</li><li>Provides a reference point for the later VEM-based work</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Fractured/deformable porous media with frictional matrix–fracture contact, small displacement, and linear poro-elastic matrix behaviour.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-cmame-contact.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a comparison figure for mixed vs Nitsche convergence, contact state, or parameter sensitivity here.</span></figcaption>
+</figure>
+</div>
+</article>
+<article class="pub-item paper-card fade-in" data-type="proceedings">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Proceedings</span>Mixed and Nitsche’s discretizations of frictional contact-mechanics in fractured porous media</div>
+<div class="authors">Laurence Beaude, Franz Chouly, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">LSSC 2023, Lecture Notes in Computer Science, pp. 71–80</div>
+<div class="pub-links"><a href="https://doi.org/10.1007/978-3-031-56208-2_6">doi</a><a href="https://hal.science/hal-04013887">HAL</a></div>
+<p class="paper-summary">Proceedings version presenting frictional contact discretisations in fractured porous media to the large-scale scientific computing community.</p>
+<div class="algorithm-bar"><span>mixed contact</span><span>Nitsche</span><span>Darcy flow</span><span>semismooth contact</span><span>fracture networks</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Mixed-dimensional fracture representation</li><li>Comparison of mixed and Nitsche contact formulations</li><li>Darcy-flow/fracture-mechanics coupling</li><li>Nonlinear contact-solver considerations</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Disseminates the contact-discretisation framework in an HPC/scientific-computing setting</li><li>Condenses the main computational choices behind the CMAME paper</li><li>Highlights solver relevance for large-scale fractured-media simulations</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Fractured porous media with matrix–fracture frictional contact and flow-driven deformation.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-cmame-contact.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a compact conference-style figure summarising the contact formulations here.</span></figcaption>
+</figure>
+</div>
+</article>
+<article class="pub-item paper-card fade-in" data-type="proceedings">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Proceedings</span>Thermodynamically Consistent discretisation of a Thermo-Hydro-Mechanical model</div>
+<div class="authors">Jérôme Droniou, <strong>Mohamed Laaziri</strong> and Roland Masson</div>
+<div class="venue">Finite Volumes for Complex Applications X, pp. 265–273 (FVCA 2023)</div>
+<div class="pub-links"><a href="https://doi.org/10.1007/978-3-031-40864-9_21">doi</a><a href="https://hal.science/hal-04105527">HAL</a></div>
+<p class="paper-summary">Introduces a thermodynamically consistent THM discretisation for non-isothermal single-phase flow coupled to linear thermo-poro-elasticity.</p>
+<div class="algorithm-bar"><span>HFV</span><span>P2 FEM</span><span>energy estimate</span><span>thermodynamic consistency</span><span>nonlinear convection</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Finite volume discretisation for flow and energy equations</li><li>Hybrid Finite Volume example implementation</li><li>Conforming Galerkin/P2 finite element approximation for mechanics</li><li>Discrete energy estimate guided by thermodynamic consistency</li><li>Treatment of nonlinear thermal convection</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Establishes the energy-estimate foundation later expanded to mixed-dimensional THM models</li><li>Works for a broad class of thermodynamic single-phase fluid models</li><li>Handles diffusive and convection-dominated energy transport</li><li>Validated on a 2D analytical test case</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Hydraulic stimulation of deep geothermal systems and induced-seismicity risk assessment in CO2 storage.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-fvca-thm.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add the FVCA analytical test, convergence plot, or thermodynamic-energy diagram here.</span></figcaption>
+</figure>
+</div>
+</article>
+</div><div class="pub-year fade-in">2022</div><div class="pub-list">
+<article class="pub-item paper-card fade-in" data-type="proceedings">
+<div class="paper-top">
+<div class="title"><span class="pub-badge">Proceedings</span>Digital 2D state observers design for the Navier–Stokes equation</div>
+<div class="authors">Ayoub Farkane, Mohamed Boutayeb, <strong>Mohamed Laaziri</strong> and Mounir Ghogho</div>
+<div class="venue">CoDIT 2022, pp. 1026–1030</div>
+<div class="pub-links"><a href="https://doi.org/10.1109/CoDIT55151.2022.9804019">doi</a><a href="https://hal.science/hal-03741109">HAL</a><a href="https://dblp.org/rec/conf/codit/FarkaneBMG22">DBLP</a></div>
+<p class="paper-summary">Early work at the interface of numerical PDEs and control, focused on digital state observer design for the two-dimensional Navier–Stokes equation.</p>
+<div class="algorithm-bar"><span>finite differences</span><span>state observer</span><span>Navier–Stokes</span><span>LMI keywords</span><span>digital estimator</span></div>
+</div>
+<div class="paper-layout">
+<div class="detail-grid">
+<div class="detail-box"><h4>Computational / numerical core</h4><ul><li>Finite-difference discretisation of the 2D Navier–Stokes equation</li><li>Digital state observer construction</li><li>State-estimation viewpoint for nonlinear PDE dynamics</li><li>Control-oriented analysis with observer-gain design</li></ul></div>
+<div class="detail-box"><h4>Main achievements</h4><ul><li>Connects numerical simulation of Navier–Stokes equations with observer-based control theory</li><li>Broadens the computational profile beyond porous-media THM models</li><li>Introduces state-estimation language that is useful for data assimilation and model reduction</li></ul></div>
+<div class="application"><strong>Physics application.</strong> Fluid dynamics and incomplete-state reconstruction for two-dimensional incompressible flow.</div>
+</div>
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Figure slot" src="img/figures/figure-navier-stokes-observer.svg"/>
+<figcaption><strong>Figure slot</strong><span>Add a velocity/vorticity reconstruction, observer-error plot, or sensor-layout diagram here.</span></figcaption>
+</figure>
+</div>
+</article>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<p>© 2026 Mohamed Laaziri. Static academic website for research, software, and scientific computing.</p>
+<div class="footer-links">
+<a href="mailto:newmohamedlaaziri@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/">LinkedIn</a>
+<a href="https://github.com/Laaziri-Mohamed">GitHub</a>
+<a href="https://cv.hal.science/mohamed-laaziri">HAL</a>
+</div>
+</div>
+</footer>
 </body>
 </html>

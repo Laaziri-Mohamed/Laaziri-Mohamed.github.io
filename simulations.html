@@ -1,113 +1,231 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software - Mohamed Laaziri</title>
-  <meta name="description" content="Software and numerical simulations by Mohamed Laaziri, including VEM fracture thermo-poro-mechanics, Fortran code, and multiphysics coupling workflows.">
-  <meta name="author" content="Mohamed Laaziri">
-  <meta property="og:title" content="Software - Mohamed Laaziri">
-  <meta property="og:description" content="Software and numerical simulations by Mohamed Laaziri, including VEM fracture thermo-poro-mechanics, Fortran code, and multiphysics coupling workflows.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://laaziri-mohamed.github.io/">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Software and Simulations | Mohamed Laaziri | VEM THM Fracture Contact Code</title>
+<meta content="Scientific software and simulations by Mohamed Laaziri: Fortran VEM solver for fractured poromechanics, Nitsche or mixed Lagrange multiplier contact, Coulomb friction, pressure-temperature coupling, SuperLU, and ParaView outputs." name="description"/>
+<meta content="Mohamed Laaziri" name="author"/>
+<meta content="Software and Simulations | Mohamed Laaziri | VEM THM Fracture Contact Code" property="og:title"/>
+<meta content="Scientific software and simulations by Mohamed Laaziri: Fortran VEM solver for fractured poromechanics, Nitsche or mixed Lagrange multiplier contact, Coulomb friction, pressure-temperature coupling, SuperLU, and ParaView outputs." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://laaziri-mohamed.github.io/simulations.html" property="og:url"/>
+<link href="img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+
+  <meta content="index, follow, max-image-preview:large" name="robots"/>
+  <meta content="Mohamed Laaziri, Laaziri Mohamed, M. Laaziri, Applied Mathematics, Scientific Computing, Computational Multiphysics, Thermo-Hydro-Mechanical Modeling, THM, Virtual Element Method, VEM, Nitsche Method, Fractured Porous Media, Contact Mechanics, Coulomb Friction, Nuclear Safety, CEA IRESNE, CAST3M, CIMAC, Corium Concrete Interaction, Poromechanics, Newton Krylov, Semismooth Newton, Fortran scientific computing" name="keywords"/>
+  <meta content="Mohamed Laaziri | Computational Multiphysics and Numerical Analysis" property="og:site_name"/>
+  <meta content="https://laaziri-mohamed.github.io/img/seo-preview.png" property="og:image"/>
+  <meta content="Mohamed Laaziri - Computational Multiphysics and Numerical Analysis" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Software and Simulations | Mohamed Laaziri | VEM THM Fracture Contact Code" name="twitter:title"/>
+  <meta content="Scientific software and simulations by Mohamed Laaziri: Fortran VEM solver for fractured poromechanics, Nitsche or mixed Lagrange multiplier contact, Coulomb friction, pressure-temperature coupling, SuperLU, and ParaView outputs." name="twitter:description"/>
+  <meta content="https://laaziri-mohamed.github.io/img/seo-preview.png" name="twitter:image"/>
+  <meta content="#5d7f72" name="theme-color"/>
+  <link href="https://laaziri-mohamed.github.io/simulations.html" rel="canonical"/>
+  <script data-seo="true" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri",
+      "name": "Mohamed Laaziri",
+      "alternateName": [
+        "M. Laaziri",
+        "Laaziri Mohamed",
+        "Mohamed LAAZIRI"
+      ],
+      "url": "https://laaziri-mohamed.github.io/",
+      "image": "https://laaziri-mohamed.github.io/img/seo-preview.png",
+      "jobTitle": "Postdoctoral Researcher in Computational Multiphysics and Scientific Computing",
+      "description": "Applied mathematician and scientific-computing researcher working on thermo-hydro-mechanical modeling, fractured porous media, contact mechanics, Virtual Element Methods, Nitsche formulations, nonlinear solvers, and nuclear-safety applications.",
+      "email": "mailto:newmohamedlaaziri@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/",
+        "https://github.com/Laaziri-Mohamed",
+        "https://cv.hal.science/mohamed-laaziri"
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "CEA IRESNE",
+          "url": "https://www.cea.fr/"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Université Côte d’Azur"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Reims Champagne-Ardenne"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "École Normale Supérieure Casablanca"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Hassan II University of Casablanca"
+        }
+      ],
+      "knowsAbout": [
+        "Applied mathematics",
+        "Scientific computing",
+        "Numerical analysis",
+        "Thermo-hydro-mechanical modeling",
+        "THM models",
+        "Virtual Element Method",
+        "VEM",
+        "Nitsche method",
+        "Hybrid Finite Volumes",
+        "Finite Element Method",
+        "Fractured porous media",
+        "Poromechanics",
+        "Contact mechanics",
+        "Coulomb friction",
+        "Newton-Krylov methods",
+        "Semismooth Newton methods",
+        "Corium-concrete interaction",
+        "Nuclear safety",
+        "CAST3M",
+        "CIMAC",
+        "Fortran"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://laaziri-mohamed.github.io/#website",
+      "url": "https://laaziri-mohamed.github.io/",
+      "name": "Mohamed Laaziri | Computational Multiphysics and Numerical Analysis",
+      "description": "Official academic website of Mohamed Laaziri.",
+      "publisher": {
+        "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://laaziri-mohamed.github.io/simulations.html#webpage",
+      "url": "https://laaziri-mohamed.github.io/simulations.html",
+      "name": "Software and Simulations | Mohamed Laaziri | VEM THM Fracture Contact Code",
+      "description": "Scientific software and simulations by Mohamed Laaziri: Fortran VEM solver for fractured poromechanics, Nitsche or mixed Lagrange multiplier contact, Coulomb friction, pressure-temperature coupling, SuperLU, and ParaView outputs.",
+      "isPartOf": {
+        "@id": "https://laaziri-mohamed.github.io/#website"
+      },
+      "about": {
+        "@id": "https://laaziri-mohamed.github.io/#mohamed-laaziri"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Mohamed Laaziri homepage">
-        <span class="brand-mark">ML</span>
-        <span><span class="brand-name">Mohamed Laaziri</span><span class="brand-title">Applied Mathematics · Scientific Computing</span></span>
-      </a>
-      <div class="nav-actions">
-        <div class="nav-links"><a href="index.html">About</a>
-<a href="publications.html">Publications</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Main navigation" class="nav">
+<a aria-label="Mohamed Laaziri homepage" class="brand" href="index.html">
+<span class="brand-mark">ML</span>
+<span><span class="brand-name">Mohamed Laaziri</span><span class="brand-title">Multiphysics · Numerical Analysis · Scientific Computing</span></span>
+</a>
+<div class="nav-actions">
+<div class="nav-links"><a href="index.html">About</a>
 <a href="research.html">Research</a>
+<a href="publications.html">Publications</a>
 <a href="simulations.html">Software</a>
 <a href="teaching.html">Experience</a>
 <a href="blog.html">Notes</a>
 <a href="contact.html">Contact</a></div>
-        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/><circle cx="12" cy="12" r="4"/></svg></button>
-        <button class="icon-btn menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      </div>
-    </nav>
-  </header>
-  <main id="main">
-
-    <section class="page-hero fade-in">
-      <div class="kicker">Software</div>
-      <h1 class="page-title">Code and numerical simulations</h1>
-      <p class="page-subtitle">Research software, numerical prototypes, and simulation workflows used for THM modelling, contact mechanics, and scientific computing.</p>
-    </section>
-
-    <section class="grid fade-in">
-      <article class="card software-card">
-        <div>
-          <div class="meta">Fortran · VEM · poromechanics</div>
-          <h3>VEM fracture thermo-poro-mechanics solver</h3>
-          <p>Open research code for 3D fracture poromechanics on polyhedral meshes. The solver couples pressure and temperature with mechanics and supports contact through Nitsche or mixed Lagrange-multiplier formulations with Coulomb friction.</p>
-          <div class="pill-row"><span class="pill">Fortran</span><span class="pill">VEM k=1</span><span class="pill">Darcy/Fourier</span><span class="pill">Coulomb friction</span><span class="pill">SuperLU</span><span class="pill">ParaView/Ensight</span></div>
-        </div>
-        <a class="btn" href="https://github.com/Laaziri-Mohamed/thm-vem-fracture-contact-nitsche-lagrange">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </article>
-
-      <article class="card software-card">
-        <div>
-          <div class="meta">CEA IRESNE · CIMAC · CAST3M</div>
-          <h3>Multiphysics coupling for corium-concrete interaction</h3>
-          <p>Postdoctoral development of numerical exchanges between a multiphase thermal-hydraulics code and a finite-element thermomechanics code. The workflow targets heat flux exchange, ablation-driven geometry updates, source terms, and thermomechanical response.</p>
-          <div class="pill-row"><span class="pill">CIMAC</span><span class="pill">CAST3M</span><span class="pill">code coupling</span><span class="pill">concrete ablation</span><span class="pill">nuclear safety</span></div>
-        </div>
-        <span class="repo">research project</span>
-      </article>
-
-      <article class="card software-card">
-        <div>
-          <div class="meta">FEM · Nitsche · fractured rocks</div>
-          <h3>P2 finite-element prototype for fractured rock mechanics</h3>
-          <p>Master's research prototype comparing a Nitsche contact formulation with an existing mixed formulation for fractured and faulted rock mechanics coupled with flow in porous media.</p>
-          <div class="pill-row"><span class="pill">P2 FEM</span><span class="pill">Nitsche</span><span class="pill">flow in porous media</span><span class="pill">fractures/faults</span></div>
-        </div>
-        <span class="repo">research prototype</span>
-      </article>
-
-      <article class="card software-card">
-        <div>
-          <div class="meta">MATLAB · Navier-Stokes</div>
-          <h3>2D Navier-Stokes finite-element simulations</h3>
-          <p>MATLAB implementation of finite-element simulations for the two-dimensional Navier-Stokes equations, including Newton iterations, SUPG stabilization, two-level method ideas, and control/observability concepts.</p>
-          <div class="pill-row"><span class="pill">MATLAB</span><span class="pill">FEM</span><span class="pill">Newton method</span><span class="pill">SUPG</span><span class="pill">control</span></div>
-        </div>
-        <span class="repo">internship work</span>
-      </article>
-    </section>
-
-    <section class="section fade-in">
-      <div class="section-head">
-        <div><div class="kicker">Technical stack</div><h2>Scientific programming</h2></div>
-        <p>Tools used across modelling, numerical analysis, implementation, simulation, and post-processing workflows.</p>
-      </div>
-      <div class="grid three">
-        <article class="card"><h3>Languages</h3><p>Fortran, C++, C, Python, MATLAB, R.</p></article>
-        <article class="card"><h3>Simulation tools</h3><p>CAST3M, CIMAC, FreeFEM++, SIMULIA ABAQUS, COMSOL.</p></article>
-        <article class="card"><h3>Systems and data</h3><p>Linux, Kali Linux, Hadoop HDFS/MapReduce, Spark, Yarn.</p></article>
-      </div>
-    </section>
-
-  </main>
-  <footer class="footer">
-    <div class="footer-inner">
-      <p>&copy; 2026 Mohamed Laaziri. Built with static HTML, CSS, and JavaScript.</p>
-      <div class="footer-links">
-        <a href="mailto:newmohamedlaaziri@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/">LinkedIn</a>
-        <a href="https://github.com/Laaziri-Mohamed">GitHub</a>
-        <a href="https://cv.hal.science/mohamed-laaziri">HAL</a>
-      </div>
-    </div>
-  </footer>
+<button aria-label="Toggle dark mode" class="icon-btn theme-toggle" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 3v2M12 19v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M3 12h2M19 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path><circle cx="12" cy="12" r="4"></circle></svg></button>
+<button aria-expanded="false" aria-label="Open navigation menu" class="icon-btn menu-btn" type="button"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+</div>
+</nav>
+</header>
+<main id="main">
+<section class="page-hero fade-in">
+<div class="kicker">Software and simulations</div>
+<h1 class="page-title">Research code for VEM fracture thermo-poro-mechanics.</h1>
+<p class="page-subtitle">The public Fortran repository is the computational counterpart of the VEM/Nitsche and mixed-contact research: polyhedral meshes, pressure-temperature coupling, fracture contact, sparse solvers, and ParaView/Ensight outputs.</p>
+</section>
+<section class="section compact fade-in">
+<article class="card software-card">
+<div>
+<div class="meta">public repository</div>
+<h3>thm-vem-fracture-contact-nitsche-lagrange</h3>
+<p>Fortran solver for 3D fracture poromechanics on polyhedral meshes. It combines VEM mechanics, Darcy/Fourier pressure-temperature coupling, Nitsche or mixed Lagrange multiplier contact, bubble DOFs, Coulomb friction, and visualization outputs.</p>
+<div class="pill-row"><span class="pill">Fortran</span><span class="pill">VEM k=1</span><span class="pill">Darcy/Fourier</span><span class="pill">Nitsche</span><span class="pill">mixed LM</span><span class="pill">Coulomb friction</span><span class="pill">SuperLU</span><span class="pill">ParaView</span></div>
+</div>
+<a class="btn primary repo" href="https://github.com/Laaziri-Mohamed/thm-vem-fracture-contact-nitsche-lagrange">Open GitHub</a>
+</article>
+</section>
+<section class="section fade-in">
+<div class="section-head">
+<div><div class="kicker">Algorithmic structure</div><h2>How the code is organised conceptually</h2></div>
+</div>
+<div class="grid two">
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Code architecture figure" src="img/figures/figure-code-architecture.svg"/>
+<figcaption><strong>Code architecture figure</strong><span>Replace with a code-flow diagram, module dependency graph, or solver workflow.</span></figcaption>
+</figure>
+<div class="pathway">
+<article class="pathway-item"><div><h3>Geometry and mesh preprocessing</h3><p>Cells, faces, fracture faces, barycentres, normal/tangential frames, jump operators, and degree-of-freedom mappings.</p></div></article>
+<article class="pathway-item"><div><h3>Mechanics and contact solve</h3><p>VEM elasticity with either Nitsche contact or mixed Lagrange multipliers plus face bubbles; Coulomb friction and stick/slip updates.</p></div></article>
+<article class="pathway-item"><div><h3>Pressure-temperature solve</h3><p>Darcy flow and Fourier heat conduction assembled in the pressure-temperature block, with thermodynamic/material functions separated in law files.</p></div></article>
+<article class="pathway-item"><div><h3>Coupling, diagnostics, visualization</h3><p>Porosity and aperture updates, fixed-stress style relaxation, residual/iteration diagnostics, and ParaView/Ensight output generation.</p></div></article>
+</div>
+</div>
+</section>
+<section class="section fade-in">
+<div class="section-head">
+<div><div class="kicker">Implemented numerical components</div><h2>What the code demonstrates</h2></div>
+</div>
+<div class="grid three">
+<article class="card"><div class="meta">mechanics</div><h3>VEM k=1 elasticity</h3><p>Cell gradients, projection operators, polytopal geometry support, and fracture-interface displacement jumps.</p></article>
+<article class="card"><div class="meta">contact</div><h3>Nitsche or mixed LM contact</h3><p>Switchable contact formulations, constant multipliers per fracture face, optional bubble DOFs, and normal stiffness control.</p></article>
+<article class="card"><div class="meta">friction</div><h3>Coulomb stick/slip logic</h3><p>Friction angle, tangential jumps, active-set style updates, and contact residual/Jacobian routines.</p></article>
+<article class="card"><div class="meta">flow and heat</div><h3>Coupled P–T system</h3><p>Pressure and temperature unknowns, Darcy/Fourier fluxes, thermodynamic functions, and fracture aperture effects.</p></article>
+<article class="card"><div class="meta">coupling</div><h3>Fixed-stress style relaxation</h3><p>Porosity and aperture updates used to stabilise poromechanical coupling between matrix and fractures.</p></article>
+<article class="card"><div class="meta">linear algebra</div><h3>Sparse direct and iterative assets</h3><p>SuperLU-backed sparse solves, BLAS/LAPACK support, and GMRES-related routines present in the repository for solver experimentation.</p></article>
+</div>
+</section>
+<section class="section fade-in">
+<div class="grid two">
+<figure class="figure-slot">
+<img alt="Placeholder figure slot for Simulation output figure" src="img/figures/figure-paraview-output.svg"/>
+<figcaption><strong>Simulation output figure</strong><span>Add a ParaView screenshot of pressure, temperature, displacement, aperture, or contact status.</span></figcaption>
+</figure>
+<article class="card">
+<div class="meta">recommended figures to add later</div>
+<h3>Best visuals for this page</h3>
+<ul>
+<li>3D fracture network mesh with polyhedral cells.</li>
+<li>Pressure and temperature fields from a coupled P–T solve.</li>
+<li>Contact status map: open, stick, slip, or normal-compliance regime.</li>
+<li>Newton iteration history or fixed-point residual curve.</li>
+<li>ParaView/Ensight output screenshot with a clear caption.</li>
+</ul>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<p>© 2026 Mohamed Laaziri. Static academic website for research, software, and scientific computing.</p>
+<div class="footer-links">
+<a href="mailto:newmohamedlaaziri@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/">LinkedIn</a>
+<a href="https://github.com/Laaziri-Mohamed">GitHub</a>
+<a href="https://cv.hal.science/mohamed-laaziri">HAL</a>
+</div>
+</div>
+</footer>
 </body>
 </html>

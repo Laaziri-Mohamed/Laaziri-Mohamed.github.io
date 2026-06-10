@@ -1,0 +1,11 @@
+/* TEAM */
+Owner: Mohamed Laaziri
+Site: Official academic website
+Fields: Computational multiphysics, numerical analysis, THM modelling, VEM, Nitsche methods, fractured porous media, contact mechanics, nuclear safety
+Contact: newmohamedlaaziri@gmail.com
+Profiles: https://github.com/Laaziri-Mohamed | https://cv.hal.science/mohamed-laaziri | https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/
+
+/* SITE */
+URL: https://laaziri-mohamed.github.io/
+Language: English
+Technology: Static HTML, CSS, JavaScript, GitHub Pages

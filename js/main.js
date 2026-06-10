@@ -3,11 +3,12 @@
 
   function setTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem(storageKey, theme);
+    try { localStorage.setItem(storageKey, theme); } catch (e) {}
   }
 
   function initTheme() {
-    const saved = localStorage.getItem(storageKey);
+    let saved = null;
+    try { saved = localStorage.getItem(storageKey); } catch (e) {}
     const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
     setTheme(saved || (prefersDark ? "dark" : "light"));
   }
@@ -16,11 +17,8 @@
     const current = window.location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav-links a").forEach((link) => {
       const href = link.getAttribute("href");
-      if (href === current || (current === "" && href === "index.html")) {
-        link.classList.add("active");
-      }
+      if (href === current || (current === "" && href === "index.html")) link.classList.add("active");
     });
-
     const menuBtn = document.querySelector(".menu-btn");
     const navLinks = document.querySelector(".nav-links");
     if (menuBtn && navLinks) {
@@ -42,7 +40,10 @@
 
   function initFadeIn() {
     const els = document.querySelectorAll(".fade-in");
-    if (!els.length) return;
+    if (!els.length || !("IntersectionObserver" in window)) {
+      els.forEach((el) => el.classList.add("visible"));
+      return;
+    }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -58,7 +59,6 @@
     const buttons = document.querySelectorAll("[data-filter]");
     const pubs = document.querySelectorAll(".pub-item[data-type]");
     if (!buttons.length || !pubs.length) return;
-
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
         buttons.forEach((btn) => btn.classList.remove("active"));

@@ -1,0 +1,22 @@
+# Mohamed Laaziri — Official Academic Website
+
+URL: https://laaziri-mohamed.github.io/
+Owner: Mohamed Laaziri
+Canonical name: Mohamed Laaziri
+Alternative names used in citations/search: M. Laaziri; Laaziri Mohamed; Mohamed LAAZIRI
+
+## Profile
+Postdoctoral researcher in computational multiphysics, numerical analysis, and scientific computing. Main topics include thermo-hydro-mechanical modeling, fractured porous media, contact mechanics, Virtual Element Methods, Nitsche formulations, Hybrid Finite Volumes, nonlinear solvers, and nuclear-safety applications.
+
+## Key pages
+- Home: https://laaziri-mohamed.github.io/
+- Research: https://laaziri-mohamed.github.io/research.html
+- Publications: https://laaziri-mohamed.github.io/publications.html
+- Software: https://laaziri-mohamed.github.io/simulations.html
+- Experience/CV: https://laaziri-mohamed.github.io/teaching.html
+- Contact: https://laaziri-mohamed.github.io/contact.html
+
+## Public profiles
+- GitHub: https://github.com/Laaziri-Mohamed
+- HAL: https://cv.hal.science/mohamed-laaziri
+- LinkedIn: https://www.linkedin.com/in/mohamed-laaziri-8aa00a224/
