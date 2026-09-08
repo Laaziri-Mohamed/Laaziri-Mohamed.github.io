@@ -1,61 +1,21 @@
-# Mohamed Laaziri — Relaxed Scientific Academic Website
+# Mohamed Laaziri — academic website
 
-This package is a polished GitHub Pages website tailored to Mohamed Laaziri's research profile.
-It uses plain HTML, CSS, and JavaScript: no framework, no build step, no tracking.
+A simple, static academic website with plain HTML, CSS, and JavaScript. No build step.
 
-## Structure
+## Preview
 
-```text
-index.html          Home / research identity
-research.html       Research programme, methods, solvers, applications
-publications.html   Paper-by-paper summaries with achievements and figure slots
-simulations.html    Software, solver architecture, and simulation outputs
-teaching.html       Experience, education, skills, conferences
-blog.html           Future technical notes
-contact.html        Contact, CV, profiles
-css/style.css       Relaxed scientific visual style
-js/main.js          Dark mode, mobile menu, filters, animations
-img/figures/        Placeholder figures you can replace later
-files/              CV PDF
-.nojekyll           Keeps GitHub Pages simple/static
-```
+Run `python -m http.server 8000` from this folder and visit http://localhost:8000.
 
-## Add your figures later
+## Photograph
 
-Every placeholder SVG in `img/figures/` can be replaced with your own figure.
-The easiest method is to keep the same filename, for example:
+The homepage uses `img/IMG_4410.jpg` directly, including when JavaScript is disabled. The full portrait and blackboard are preserved without cropping. To replace it, update the image file or its `src` and alt text in `index.html`.
 
-```text
-img/figures/figure-thm-energy.svg
-img/figures/figure-vem-coulomb.svg
-img/figures/figure-paraview-output.svg
-```
+## Content
 
-Recommended formats: SVG for clean diagrams, PNG/JPG for simulation screenshots.
-Recommended width: at least 1200 px for crisp display.
+The homepage introduces the researcher, research interests, selected papers, software, and contact information. Publications have direct paper/code links and expandable details. Research, software, and experience pages retain the detailed scientific content. The unpublished Notes page remains accessible by URL, but is omitted from the main navigation.
 
-## Deploy to GitHub Pages
+The CV link requests a copy by email until a PDF is available.
 
-Copy the files into the root of:
+## Publish
 
-```text
-https://github.com/Laaziri-Mohamed/Laaziri-Mohamed.github.io
-```
-
-Then push:
-
-```bash
-git add .
-git commit -m "Relax website design and add paper summaries"
-git push
-```
-
-GitHub Pages should serve the site at:
-
-```text
-https://laaziri-mohamed.github.io/
-```
-
-## Privacy note
-
-The HTML pages show only professional contact information. The CV PDF may contain more personal information, so review it before publishing.
+Review the files, then commit and push them to the GitHub Pages repository. No build command is needed. Preview PNG files and REVIEW.md are local review artifacts and need not be published.

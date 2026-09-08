@@ -1,81 +1,60 @@
 (function () {
-  const storageKey = "ml-site-theme";
-
-  function setTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-    try { localStorage.setItem(storageKey, theme); } catch (e) {}
+  'use strict';
+  document.documentElement.classList.add('js');
+  const menu = document.querySelector('.menu-btn');
+  const navigation = document.querySelector('.nav-links');
+  function closeMenu(restoreFocus = false) {
+    navigation?.classList.remove('open');
+    menu?.setAttribute('aria-expanded', 'false');
+    menu?.setAttribute('aria-label', 'Open navigation menu');
+    if (restoreFocus) menu?.focus();
   }
-
-  function initTheme() {
-    let saved = null;
-    try { saved = localStorage.getItem(storageKey); } catch (e) {}
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(saved || (prefersDark ? "dark" : "light"));
-  }
-
-  function initNav() {
-    const current = window.location.pathname.split("/").pop() || "index.html";
-    document.querySelectorAll(".nav-links a").forEach((link) => {
-      const href = link.getAttribute("href");
-      if (href === current || (current === "" && href === "index.html")) link.classList.add("active");
-    });
-    const menuBtn = document.querySelector(".menu-btn");
-    const navLinks = document.querySelector(".nav-links");
-    if (menuBtn && navLinks) {
-      menuBtn.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("open");
-        menuBtn.setAttribute("aria-expanded", String(isOpen));
-      });
-    }
-  }
-
-  function initThemeToggle() {
-    const btn = document.querySelector(".theme-toggle");
-    if (!btn) return;
-    btn.addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme") || "light";
-      setTheme(current === "dark" ? "light" : "dark");
-    });
-  }
-
-  function initFadeIn() {
-    const els = document.querySelectorAll(".fade-in");
-    if (!els.length || !("IntersectionObserver" in window)) {
-      els.forEach((el) => el.classList.add("visible"));
-      return;
-    }
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    els.forEach((el) => observer.observe(el));
-  }
-
-  function initPublicationFilters() {
-    const buttons = document.querySelectorAll("[data-filter]");
-    const pubs = document.querySelectorAll(".pub-item[data-type]");
-    if (!buttons.length || !pubs.length) return;
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        buttons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
-        const filter = button.dataset.filter;
-        pubs.forEach((pub) => {
-          pub.style.display = filter === "all" || pub.dataset.type === filter ? "block" : "none";
-        });
-      });
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    initTheme();
-    initNav();
-    initThemeToggle();
-    initFadeIn();
-    initPublicationFilters();
+  menu?.addEventListener('click', () => {
+    const open = navigation.classList.toggle('open');
+    menu.setAttribute('aria-expanded', String(open));
+    menu.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
   });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && navigation?.classList.contains('open')) closeMenu(true); });
+  document.addEventListener('click', event => { if (!event.target.closest('.nav')) closeMenu(); });
+  navigation?.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  const current = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === current) { link.classList.add('active'); link.setAttribute('aria-current', 'page'); }
+  });
+  const buttons = [...document.querySelectorAll('[data-filter]')];
+  const papers = [...document.querySelectorAll('.pub-item[data-type]')];
+  if (!papers.length) return;
+  const filters = document.querySelector('.filters');
+  const label = document.createElement('label');
+  label.className = 'search-label';
+  label.textContent = 'Search publications';
+  const search = document.createElement('input');
+  search.type = 'search'; search.className = 'publication-search'; search.placeholder = 'Title, author, method, or keyword…';
+  label.append(search); filters.before(label);
+  const status = document.createElement('p');
+  status.className = 'filter-status'; status.setAttribute('role', 'status');
+  filters.after(status);
+  let category = 'all';
+  const contents = papers.map(paper => paper.textContent.toLocaleLowerCase());
+  function update() {
+    const query = search.value.trim().toLocaleLowerCase();
+    let count = 0;
+    papers.forEach((paper, index) => {
+      paper.hidden = !((category === 'all' || paper.dataset.type === category) && contents[index].includes(query));
+      if (!paper.hidden) count++;
+    });
+    document.querySelectorAll('.pub-year').forEach(year => {
+      const list = year.nextElementSibling;
+      const empty = ![...list.querySelectorAll('.pub-item')].some(paper => !paper.hidden);
+      year.hidden = empty; list.hidden = empty;
+    });
+    status.textContent = count ? `${count} publication${count === 1 ? '' : 's'}` : 'No matching publications. Try another keyword or select All.';
+  }
+  buttons.forEach(button => button.addEventListener('click', () => {
+    category = button.dataset.filter;
+    buttons.forEach(item => { item.classList.toggle('active', item === button); item.setAttribute('aria-pressed', String(item === button)); });
+    update();
+  }));
+  search.addEventListener('input', update);
+  update();
 })();
