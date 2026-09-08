@@ -1,40 +1,16 @@
-# SEO and Google Search Checklist for Mohamed Laaziri
+# Search visibility and preferred thesis version
 
-This package improves discoverability, but no one can guarantee position #1 in Google. Ranking depends on indexing, query intent, backlinks, freshness, and authority signals outside the website.
+The primary reading link everywhere is https://theses.hal.science/tel-05472966v1. Keep the version suffix: replacing it with an unversioned URL may select a different revision later.
 
-## What has been added
+Implemented: prominent homepage thesis link and section, thesis navigation, an original thesis overview at /thesis.html, full-text links in publications and education, a BibTeX citation using the preferred URL, Thesis structured data, author metadata, self-canonical page URLs, accurate sitemap modification dates, and robots.txt sitemap discovery. The existing Google verification file is preserved.
 
-- Unique page titles and meta descriptions for each HTML page.
-- Canonical URLs for every public page.
-- Open Graph and Twitter preview metadata.
-- JSON-LD structured data using Schema.org `Person`, `WebSite`, `WebPage`, and publication `ItemList` markup.
-- `sitemap.xml` with all public pages.
-- `robots.txt` pointing crawlers to the sitemap.
-- A visible search-identity block for legitimate name variants: `Mohamed Laaziri`, `M. Laaziri`, `Laaziri Mohamed`.
-- `humans.txt` and `llms.txt` for clear machine-readable identity/context.
+## Account actions after publication
 
-## After pushing to GitHub
+1. In https://search.google.com/search-console/ select or verify the URL-prefix property https://laaziri-mohamed.github.io/.
+2. Submit https://laaziri-mohamed.github.io/sitemap.xml in Sitemaps.
+3. Inspect https://laaziri-mohamed.github.io/ and https://laaziri-mohamed.github.io/thesis.html and request indexing for both.
+4. On your own HAL CV, institutional page, GitHub profile, and LinkedIn, use the same full name and link to the website. Use the exact HAL version above for thesis reading links.
 
-1. Open: https://search.google.com/search-console/
-2. Add a URL-prefix property for: `https://laaziri-mohamed.github.io/`
-3. Verify ownership. The easiest method is usually HTML file upload or HTML tag.
-4. Submit this sitemap: `https://laaziri-mohamed.github.io/sitemap.xml`
-5. Use URL Inspection for the homepage and click “Request indexing”.
-6. In HAL, LinkedIn, GitHub profile, ORCID/Google Scholar if you have them, add the website URL. Backlinks from your official profiles help Google connect identities.
+Search Console access is required for those submissions; a verification file alone does not establish that the property is verified in your account. You cannot request indexing for the HAL domain through your GitHub Pages property. No first-place ranking, search snippet, indexing date, or preferred HAL result can be guaranteed. The site's canonical tags describe its own original pages, not directives controlling HAL's search results. Do not submit duplicate thesis copies merely to compete with the preferred HAL version.
 
-## Queries targeted naturally
-
-- Mohamed Laaziri
-- Laaziri Mohamed
-- M. Laaziri
-- Mohamed Laaziri computational multiphysics
-- Mohamed Laaziri THM modelling
-- Mohamed Laaziri VEM Nitsche
-- Mohamed Laaziri fractured porous media
-- Mohamed Laaziri contact mechanics
-- Mohamed Laaziri nuclear safety
-- Mohamed Laaziri CEA IRESNE
-
-## Important
-
-Do not add hidden keyword text. It can look manipulative. Keep search phrases visible and useful to humans.
+Google documentation: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl

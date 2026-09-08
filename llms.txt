@@ -8,6 +8,12 @@ Alternative names used in citations/search: M. Laaziri; Laaziri Mohamed; Mohamed
 ## Profile
 Postdoctoral researcher in computational multiphysics, numerical analysis, and scientific computing. Main topics include thermo-hydro-mechanical modeling, fractured porous media, contact mechanics, Virtual Element Methods, Nitsche formulations, Hybrid Finite Volumes, nonlinear solvers, and nuclear-safety applications.
 
+## PhD thesis
+- Title: Numerical modelling of thermo-hydro-mechanical processes in fractured porous media
+- Author: Mohamed Laaziri
+- Preferred reading and sharing version: https://theses.hal.science/tel-05472966v1
+- Overview and citation: https://laaziri-mohamed.github.io/thesis.html
+
 ## Key pages
 - Home: https://laaziri-mohamed.github.io/
 - Research: https://laaziri-mohamed.github.io/research.html
